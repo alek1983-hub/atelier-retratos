@@ -380,6 +380,11 @@ h1{
    RESPONSIVE
 ========================================= */
 
+/* Ocultar icono de menu */
+.menuIcono{
+    display: none;
+}
+
 @media (max-width: 768px) {
 
 

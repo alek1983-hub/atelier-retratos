@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería - Atelier Retratos</title>
+  <link rel="stylesheet" href="../css/contacto.css">
+  <link rel="stylesheet" href="https://use.typekit.net/tvk3hjf.css">
+
+  
+
+  <!-- leaflet -->
+
+  <link rel="stylesheet"
+  href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  
+   <!-- Routing Machine -->
+  
+  <link rel="stylesheet"
+  href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css">
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+
+  <script src="../js/mapa.js" defer></script>
+  <script src="../js/scrollNav.js" defer></script>
+  <script src="../js/menuResponsive.js" defer></script>
+  
+</head>
+
+<body>
+
+<!--   HEADER  -->
+    <div class="hero">
+        <div class="capaHero">
+            <nav>
+                <div class="logo">Atelier Retratos</div>
+
+                <div class="menuIcono">
+                    <img src="../assets/images/elementosDeco/menuIcono.svg" alt="menuIcono" width="40" height="40">
+                </div>
+
+                <div class="menu">
+                    <a href="../index.html">Inicio</a>
+                    <a href="/views/galeria.html">Galería</a>
+                    <a href="/views/presupuesto.html">Presupuesto</a>
+                    <a href="/views/contacto.html" class="active">Contacto</a>
+                </div>
+             </nav>    
+        </div>
+    </div>
+
+    <!-- CONTACTO -->
+<section class="contacto">
+
+    <h1>Contacto</h1>
+
+    <div class="containerContacto">
+
+        <!-- DATOS -->
+        <div class="infoContacto">
+
+            <h2>Información</h2>
+
+            <p><strong>Dirección:</strong> Calle Arte 123, Madrid</p>
+
+            <p><strong>Teléfono:</strong> 600 123 456</p>
+
+            <p><strong>Email:</strong> info@atelierretratos.com</p>
+
+            <p>
+                Si deseas un retrato personalizado, puedes escribirnos y
+                responderemos lo antes posible.
+            </p>
+
+        </div>
+
+
+        <!-- FORMULARIO -->
+         <div class="containerForm">
+            <form class="formularioContacto" id="formContacto" novalidate>
+
+
+                <h2>Envíanos un mensaje</h2>
+
+                <input type="text"
+                    placeholder="Nombre"
+                    required id="nombreContacto">
+
+                <input type="email"
+                    placeholder="Email"
+                    required id="emailContacto">
+
+                <textarea
+                    id="mensajeContacto"
+                    placeholder="Escribe tu mensaje"
+                    required></textarea>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MAPA -->
+<section class="mapaSection">
+
+    <h2>Ubicación</h2>
+
+    <div id="mapa"></div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="fondoFooter">
+        <div class="containerFooter">
+            <div class="links">
+                <a href="../views/avisoLegal.html">Aviso legal</a>
+                <a href="../views/contacto.html">Dirección</a>
+            </div>
+            <div class="redes">
+                <a href="#">
+                    <img src="../assets/images/socialIcons/facebook.svg" alt="icono facebook">
+                </a>
+                <a href="#">   
+                    <img src="../assets/images/socialIcons/instagram.svg" alt="icono instagram">
+                </a>
+                <a href="#">    
+                    <img src="../assets/images/socialIcons/youtube.svg" alt="icono youtube">
+                </a>     
+            </div>
+        </div>
+        <div class="final">
+            <p>© 2026 Atelier Retratos</p>
+        </div>  
+    </div>
+ </footer>
+
+
+
+</body>
+</html>

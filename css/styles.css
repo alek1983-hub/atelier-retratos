@@ -1,0 +1,561 @@
+/* Eliminamos estilos por defecto */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+  
+
+ /* Estilos generales */
+
+.container{
+    margin-top: 250px;
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+a, p, h3{
+    font-family: "bc-civitas", sans-serif;  
+}
+
+h1, h2{
+    font-family: "cinema-script", sans-serif;
+}
+
+
+ /* Estilos del hero */
+
+ .hero{
+    background-image: url(../assets/images/elementosDeco/fondoAtelier.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center top;
+ }
+
+ /* Estilos de la capa del hero */
+
+ .capaHero{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    text-align: center;
+ }
+
+
+ /* Estilos de la barra de navegacion */
+
+ nav{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.5s ease-in-out;
+ }
+
+/*  Estilos para Scroll  */
+
+ nav.scrolled{
+    background-color: #000000;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.4);
+ }
+
+ nav.scrolled .logo{
+    display: none;
+ }
+
+ nav.scrolled .menu{
+    margin: 20px auto 20px auto;
+ }
+ 
+
+ /* Estilo para el logo */
+
+.logo{
+    margin: 100px auto 0px auto;
+    padding-top: 40px;
+    font-family:"gelato-luxe", sans-serif;
+    font-weight: 300;
+    font-size: 2.8rem;
+    margin: 1rem 0;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+/* Contenedor de la barra de navegacion */
+
+.menu{
+    transition: all 0.5s ease-in-out;
+    margin:30px auto 0px auto;
+    display: flex;
+    background-color: white;
+    width: 70vw;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.4);
+}
+
+.menu a{
+    color: rgb(54, 54, 54);
+    text-decoration: none;
+    font-weight: 400;
+    font-size:1.2rem;
+    position: relative; /*Estilos para Active*/
+}
+
+/****Estilos para Active****/
+
+.menu a.active::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 20px;
+    background: url('../assets/images/elementosDeco/underline2.png') no-repeat center;
+    background-size: 100% 7px;
+}
+
+/* Estilos del hero */
+
+.containerHero{
+    margin-bottom: 350px;
+}
+
+.containerHero h1{
+    margin-top: 550px;
+    font-family: "cinema-script", sans-serif;
+    font-weight: 300;
+    font-size: 4.8rem;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.containerHero p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+/*******Seccion Servicios*******/
+
+#servicios{
+    background-image: url(../assets/images/elementosDeco/fondoTexture.jpeg) ;
+    box-shadow: 0px 4px 10px 10px rgba(0,0,0,0.4);
+}
+
+
+
+
+/*******Tecnicas*******/
+
+.tecnicas{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.retrato img{
+    width: 25vw;
+    object-fit: cover;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 8px rgba(0,0,0,0.5)
+}
+
+.fotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotos h3{
+    font-family: "cinema-script", sans-serif;
+    font-weight: 300;
+    font-size: 2.8rem;
+    color: rgba(66, 34, 1, 0.5);
+    margin: 70px auto 50px auto;
+}
+
+/*******Seccion Noticias*******/
+
+.containerNoti{
+    margin-top: 250px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-weight: 300;
+    font-size:4rem;
+    letter-spacing: 1.5px;
+    color: rgba(216, 164, 5, 0.773);
+    margin: 0 auto 50px auto;
+}
+
+
+.noticias {
+    width: 100%;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+/*******Grid******/
+
+.gridNoticias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+/*****Tarjeta******/
+
+.cardNoticia {
+    width: 450px;
+    margin-bottom: 50px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+
+/* Hover de tarjeta */
+.cardNoticia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+
+/* Imagen de tarjeta */
+
+
+.cardNoticia img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+/* Contenido de tarjeta */
+
+.contenidoCard {
+    padding: 20px;
+    text-align: left;
+    text-align: center;
+}
+
+
+/* Titulo de tarjeta */
+
+.cardNoticia h3 {
+    font-weight: 300;
+    font-size: 2rem;
+    color: rgba(216, 164, 5, 0.773);
+    margin-bottom: 15px;
+}
+
+
+/* Parrafo de tarjeta */
+.cardNoticia p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+/* Fecha de tarjeta */
+.fecha {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+/*******Seccion Sobre nosotros*******/
+
+.contenido{
+    display: flex;
+    justify-content: space-around;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
+
+.texto p:first-of-type::first-letter{
+    font-size: 2.5rem;
+}
+
+/* Imagen*/
+
+.containerImage{
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.imagen{
+    width: 50%;
+    height: auto;
+}
+
+.containerImage img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 8px rgba(0,0,0,0.5);
+
+}
+
+/********Seccion Footer*******/
+
+
+.containerFooter{
+    background-color: rgb(4, 82, 141);
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 10px 8px rgba(0,0,0,0.5);
+}
+
+/* Contenedor de links */
+
+.links{
+    display:flex;
+    width: 70%;
+    height: auto;
+    margin-left: 50px;
+    gap: 150px;
+}
+
+.links a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+/* Contenedor de redes sociales */
+
+.redes{
+    display:flex;
+    width: 30%;
+    height: auto;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Imagenes de redes sociales */
+
+.redes img{
+    width: 45px;
+    height: 45px;
+    filter: drop-shadow(0px 4px 5px rgba(0,0,0,0.5));
+}
+
+/* Contenedor de derechos de autor */
+
+.final{
+    background-color: #000000;
+    height: 35px;
+    display: flex;
+    align-items: center;
+
+}
+
+/* texto de derechos de autor */
+
+.fondoFooter p{
+    color: #ffffff;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+/*============================
+         RESPONSIVE
+=============================*/       
+
+
+/* Ocultar icono de menu */
+.menuIcono{
+    display: none;
+}
+
+
+
+/* Panttalla pequeña */
+
+@media (max-width: 768px) {
+
+    /* Mostrar icono */
+    .menuIcono {
+
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+    }
+
+
+    /* Ocultar menú */
+    .menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
+        z-index: 1010;
+        background-color: white;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2) ;
+    }
+
+
+    /* Mostrar menú */
+    .mostrarMenu{
+        display: flex !important;
+    }
+
+    .menu a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a.active::after{
+        width: 100%;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        align-content: center;
+        z-index: 2000;
+    
+    }
+    
+    .logo{
+        font-size: 1.5rem;
+        padding-top: 0;   
+    }
+
+    nav.scrolled .logo{
+        display: block;
+     }
+
+    .containerFooter{
+        flex-direction: column;
+        height: auto;
+    }
+
+    
+    /*  Hero */
+
+    .containerHero h1{
+        font-size: 3.3rem;
+        width: 90%;
+        margin: 80% auto auto auto
+    }
+
+    .containerHero p{
+        font-size: 1.5rem;
+        width: 90%;
+        margin: 25px auto auto auto
+    }
+
+    /* Seccion Servicios */
+
+    h2{
+        font-size: 3.0rem;
+    }
+
+    .tecnicas{
+        flex-direction: column;
+    }
+
+    .retrato img{
+        width: 85vw;
+    }
+
+    .fotos h3{
+        margin: 15px auto 80px auto;
+    }
+
+
+    /* Seccion Noticias */
+
+    .containerNoti{
+        width: 85%;
+        margin: 90% auto auto auto;
+    }
+
+/* Seccion sobre nosotros */
+
+    .contenido{
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .texto{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .imagen{
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .containerImage img{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Footer */
+
+    .links{
+        width: 90%;
+    }
+
+}
+
+
+

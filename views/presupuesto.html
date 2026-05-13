@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería - Atelier Retratos</title>
+  <link rel="stylesheet" href="../css/presupuesto.css">
+  <script src="../js/scrollNav.js" defer></script>
+  <script src="../js/presupuesto.js" defer></script>
+  <script src="../js/menuResponsive.js" defer></script>
+  <link rel="stylesheet" href="https://use.typekit.net/tvk3hjf.css">
+</head>
+
+<body>
+
+<!--   HEADER  -->
+    <div class="hero">
+        <div class="capaHero">
+            <nav>
+                <div class="logo">Atelier Retratos</div>
+
+                <div class="menuIcono">
+                    <img src="../assets/images/elementosDeco/menuIcono.svg" alt="menuIcono" width="40" height="40">
+                </div>
+
+                <div class="menu">
+                    <a href="../index.html">Inicio</a>
+                    <a href="/views/galeria.html">Galería</a>
+                    <a href="/views/presupuesto.html" class="active">Presupuesto</a>
+                    <a href="/views/contacto.html">Contacto</a>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+<!-- CONTENIDO -->
+<section class="containerPresupuesto">
+
+    <h1>Solicita tu retrato personalizado</h1>
+  
+    <form id="formPresupuesto" novalidate>
+  
+        <!-- ================= DATOS DE CONTACTO ================= -->
+
+        <div class="datosContacto">
+             <h2>Datos de contacto</h2>
+  
+             <!-- Nombre -->
+             <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required pattern="[A-Za-z]{1,15}" maxlength="15" placeholder="Ej: Juan" title="Solo letras, máximo 15 caracteres">
+             </div>   
+  
+             <!-- Apellidos -->
+             <div class="campo"> 
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" required pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]{1,15}" maxlength="40" placeholder="Ej: Pérez García" title="Solo letras, máximo 40 caracteres">
+             </div>    
+  
+             <!-- Teléfono -->   
+             <div class="campo"> 
+                 <label for="telefono">Teléfono:</label>
+                 <input type="tel" id="telefono" required pattern="[0-9]{9}" maxlength="9" placeholder="Ej: 600123456" title="Debe tener 9 números">
+             </div>   
+
+       
+             <!-- Email -->
+             <div class="campo"> 
+                <label for="email">Email:</label>
+                <input type="email" id="email" required placeholder="Ej: correo@email.com" title="Introduce un email válido">
+             </div>  
+         </div>    
+  
+        <!-- ================= CONFIGURACIÓN ================= -->
+         <div class="configuracion">
+            <h2>Configuración del retrato</h2>
+  
+            <!-- Técnica -->
+            <div class="campo">
+                <div class="tecnica">
+                    <label for="tecnica">Técnica:</label>
+                    <select id="tecnica">
+                        <option value="lapiz">Lápiz</option>
+                        <option value="acuarela">Acuarela</option>
+                        <option value="oleo">Óleo</option>
+                    </select>
+               </div>    
+                <!-- Tamaño -->
+                <div class="tamano">
+                    <label for="tamano">Tamaño:</label>
+                    <select id="tamano">
+                        <option value="pequeno">Pequeño</option>
+                        <option value="mediano">Mediano</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                </div>    
+             
+            <!-- Enmarcado -->
+                <label class="check">
+                    <input type="checkbox" id="enmarcado"> Añadir enmarcado (+ <span id="precioMarco">20</span> €)
+                </label>
+            </div>    
+            <!-- Extras -->
+            <h3>Extras</h3>
+  
+            <div class="campo">
+                <label class="check">
+                    <input type="checkbox" class="extra" value="15"> Fondo personalizado (+15€)
+                </label>
+  
+                <label class="check">
+                     <input type="checkbox" class="extra" value="20">Segunda persona (+20€)
+                </label>
+            </div>
+  
+            <!-- Plazo -->
+             <div class="campo">
+                <label for="plazo">Días de entrega:</label>
+                <input class="plazo" type="number" id="plazo" min="1" value="15" required>
+            </div>
+            <!-- Resultado -->
+            <h2 id="resultado">Precio: 0 €</h2>
+  
+            <!-- Condiciones -->
+                <label class="check">
+                    <input type="checkbox" id="condiciones" required> Acepto las condiciones de privacidad
+                </label>
+            <!-- Botones -->
+            <div class="botones">
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+            </div>
+  
+         </div>
+  
+    </form>
+  
+  </section>
+  
+
+<!-- FOOTER -->
+<footer>
+    <div class="fondoFooter">
+        <div class="containerFooter">
+            <div class="links">
+                <a href="../views/avisoLegal.html">Aviso legal</a>
+                <a href="../views/contacto.html">Dirección</a>
+            </div>
+            <div class="redes">
+                <a href="#">
+                    <img src="../assets/images/socialIcons/facebook.svg" alt="icono facebook">
+                </a>
+                <a href="#">   
+                    <img src="../assets/images/socialIcons/instagram.svg" alt="icono instagram">
+                </a>
+                <a href="#">    
+                    <img src="../assets/images/socialIcons/youtube.svg" alt="icono youtube">
+                </a>     
+            </div>
+        </div>
+            <div class="final">
+                <p>© 2026 Atelier Retratos</p>
+            </div>
+    </div>
+ </footer>
+
+
+
+</body>
+</html>

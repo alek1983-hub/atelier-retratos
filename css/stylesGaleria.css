@@ -1,0 +1,366 @@
+/* Eliminar estilos por defecto */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+  
+
+ /* Estilos generales */
+
+ a, p, h3{
+    font-family: "bc-civitas", sans-serif;  
+}
+
+ /* Estilos del hero */
+
+ .hero{
+    background-image: url(../assets/images/elementosDeco/fondoAtelier.jpeg);
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center top;
+ }
+
+ .capaHero{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    text-align: center;
+ }
+
+ /********ESTILOS SCROLL************/
+
+ nav{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.5s ease-in-out;
+ }
+
+
+
+ nav.scrolled{
+    background-color: #000000;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.4);
+ }
+
+ nav.scrolled .logo{
+    display: none;
+ }
+
+ nav.scrolled .menu{
+    margin: 20px auto 20px auto;
+ }
+
+
+.logo{
+    padding-top: 40px;
+    font-family:"gelato-luxe", sans-serif;
+    font-weight: 300;
+    font-size: 2.8rem;
+    margin: 1rem 0;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.menu{
+    transition: all 0.5s ease-in-out;
+    margin:30px auto 0px auto;
+    margin-top:30px;
+    display: flex;
+    background-color: white;
+    width: 70vw;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.4);
+}
+
+.menu a{
+    color: rgb(54, 54, 54);
+    text-decoration: none;
+    font-weight: 400;
+    font-size:1.2rem;
+    position: relative;  /*Estilos para Active*/
+}
+
+/****Estilos para Active****/
+
+.menu a.active::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 20px;
+    background: url('../assets/images/elementosDeco/underline2.png') no-repeat center;
+    background-size: 100% 7px;
+}
+
+
+/*******Seccion Galeria*******/
+
+.containerGaleria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.galeriaTexto h1{
+    font-family: "cinema-script", sans-serif;
+    font-weight: 300;
+    font-size: 4rem;
+    letter-spacing: 1.5px;
+    color: rgba(216, 164, 5, 0.773);
+    margin: 200px auto 5px auto;
+}
+
+.galeriaTexto p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/*********Imagenes de galeria*******/
+
+.containerImages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 120px 0;
+}
+
+#principal{
+    display: block;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    align-items: center;
+    margin-bottom: 50px;
+    box-shadow: 0px 4px 10px 8px rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.miniaturas{
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.mini{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0px 4px 10px 8px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mini.activa{
+    box-shadow: 0px 4px 10px 8px rgba(2, 175, 255, 0.773);
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+/********FOOTER*******/
+
+
+.containerFooter{
+    background-color: rgb(4, 82, 141);
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 10px 8px rgba(0,0,0,0.5);
+}
+
+.links{
+    display:flex;
+    width: 70%;
+    height: auto;
+    margin-left: 50px;
+    gap: 150px;
+}
+
+.links a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.redes{
+    display:flex;
+    width: 30%;
+    height: auto;
+    gap: 20px;
+    justify-content: center;
+}
+
+.redes img{
+    width: 45px;
+    height: 45px;
+    filter: drop-shadow(0px 4px 5px rgba(0,0,0,0.5));
+}
+
+.final{
+    background-color: #000000;
+    height: 35px;
+    display: flex;
+    align-items: center;
+
+}
+
+.fondoFooter p{
+    color: #ffffff;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+/*=========================================
+            RESPONSIVE
+=========================================*/
+
+
+
+/* Ocultar icono de menu */
+.menuIcono{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .galeriaTexto h1{
+        margin: 100px auto 30px auto;
+        width: 90%;
+        font-size: 3rem;
+    }
+
+    .galeriaTexto p{
+        text-align: left;
+        margin: 0 auto;
+        width: 85%;
+        font-size: 1.2rem;
+    }
+
+
+    /* nav */
+
+    /* Mostrar icono */
+    .menuIcono{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+    }
+
+
+    /* Menu Responsive */
+    .menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
+        z-index: 1010;
+        background-color:white;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+
+    /* Mostrar menú */
+    .mostrarMenu{
+        display: flex !important;
+    }
+
+    /* Links menu */
+
+
+    .menu a{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Linea activa */
+
+    .menu a.active::after{
+        width: 100%;
+    }
+
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        position: relative;
+        z-index: 2000;
+    
+    }
+    
+    .logo{
+        font-size: 1.5rem;
+        padding-top: 0;   
+    }
+
+    nav.scrolled .logo{
+        display: block;
+     }
+
+    /* Galeria */
+
+    .mini{
+        width: 50px;
+        height: 50px;
+    }
+
+    #principal{
+        width: 90%;
+        min-width: 350px;
+        height: 350px;
+        margin: 30px auto 60px auto;
+    }
+
+    /* FOOTER */
+
+
+    .containerFooter{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .links{
+        width: 90%;
+    }
+    
+
+}    

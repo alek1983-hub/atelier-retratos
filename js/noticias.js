@@ -1,4 +1,4 @@
-fetch("../data/noticias.json")
+fetch("./data/noticias.json")
   .then(res => res.json())
   .then(data => {
 

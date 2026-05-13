@@ -3,20 +3,20 @@
       "titulo": "Nueva técnica en acuarela",
       "texto": "Hemos incorporado retratos en acuarela con acabados más detallados.",
       "fecha": "10/05/2026",
-      "imagen": "./assets/images/noticias/noticiaAcuarela.jpeg"
+      "imagen": "assets/images/noticias/noticiaAcuarela.jpeg"
     },
   
     {
       "titulo": "Promoción verano",
       "texto": "10% de descuento en retratos familiares durante este mes.",
       "fecha": "15/06/2026",
-      "imagen": "./assets/images/noticias/noticiasFamilia.jpeg"
+      "imagen": "assets/images/noticias/noticiasFamilia.jpeg"
     },
   
     {
       "titulo": "Exposición artística",
       "texto": "Participamos en una exposición local mostrando nuestros mejores trabajos.",
       "fecha": "01/07/2026",
-      "imagen": "./assets/images/noticias/noticiasExpo.jpeg"
+      "imagen": "assets/images/noticias/noticiasExpo.jpeg"
     }
   ]

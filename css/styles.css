@@ -400,6 +400,11 @@ h2{
 ////////////////////////////////////////////////////////////////*/
 
 
+
+.galeriaTexto{
+    width: 90%;
+}
+
 .containerGaleria{
     display: flex;
     flex-direction: column;

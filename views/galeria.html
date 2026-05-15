@@ -1,93 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galería - Atelier Retratos</title>
-  <link rel="stylesheet" href="../css/stylesGaleria.css">
-  <script src="../js/galeria.js" defer></script>
-  <script src="../js/scrollNav.js" defer></script>
-  <script src="../js/menuResponsive.js" defer></script>
-  <link rel="stylesheet" href="https://use.typekit.net/tvk3hjf.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galería - Atelier Retratos</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <script src="../js/galeria.js" defer></script>
+        <script src="../js/scrollNav.js" defer></script>
+        <script src="../js/menuResponsive.js" defer></script>
 
-<body>
+        <!-- Fuentes de Adobe -->
+        <link rel="stylesheet" href="https://use.typekit.net/tvk3hjf.css">
+    </head>
 
-<!--   HEADER  -->
-    <div class="hero">
-        <div class="capaHero">
-            <nav>
-                <div class="logo">Atelier Retratos</div>
+    <body>
 
-                <div class="menuIcono">
-                    <img src="../assets/images/elementosDeco/menuIcono.svg" alt="menuIcono" width="40" height="40">
+        <header>
+
+            <div class="heroAssets">
+                <div class="capaHero">
+                    <nav>
+                        <div class="logo">Atelier Retratos</div>
+
+                        <div class="menuIcono">
+                            <img src="../assets/icons/menuIcono.svg" alt="Icono de menu" width="40" height="40">
+                        </div>
+
+                        <div class="menu">
+                            <a href="../index.html">Inicio</a>
+                            <a href="./galeria.html" class="active">Galería</a>
+                            <a href="./presupuesto.html">Presupuesto</a>
+                            <a href="./contacto.html">Contacto</a>
+                        </div>
+                    </nav>
+
                 </div>
-
-                <div class="menu">
-                    <a href="../index.html"">Inicio</a>
-                    <a href="./galeria.html" class="active">Galería</a>
-                    <a href="./presupuesto.html">Presupuesto</a>
-                    <a href="./contacto.html">Contacto</a>
-                </div>
-            </nav>
-
-        </div>
-    </div>
-
-<!-- GALERÍA -->
-    <section class="containerGaleria">
-        <div class="galeriaTexto">
-            <h1>Galería de Retratos</h1>
-            <p>
-            Explora algunos de nuestros trabajos realizados en diferentes técnicas y estilos.
-            </p>
-        </div>
-
-  <!-- Imagen principal -->
-        <div class="containerImages">
-            <div class="visor">
-                 <img id="principal" src="../assets/images/retratos/JovenAcuarela.jpeg" class="thumb" alt="Pintura acuarela de joven" width="1024" height="1280">
             </div>
 
-  <!-- Miniaturas -->
-            <div class="miniaturas">
-                <img src="../assets/images/retratos/JovenAcuarela.jpeg" class="mini" alt="Pintura acuarela de joven" width="1024" height="1280">
-                <img src="../assets/images/retratos/jovenOleo.jpeg" class="mini" alt="Pintura oleo de joven" width="1024" height="1280">
-                <img src="../assets/images/retratos/retratoFamiliaOleo.jpeg" class="mini" alt="pintura oleo de familia" width="1280" height="1024">
-                <img src="../assets/images/retratos/ninaLapiz.jpeg" class="mini" alt="pintura" width="1024" height="1280">
-                <img src="../assets/images/retratos/reytratoOleoNovios.jpeg" class="mini" alt="pintura" width="1280" height="1024">
+        </header>
+        
+        
+        <main>
 
-            </div>
-        </div>
+            <section class="containerGaleria">
+                <div class="galeriaTexto">
+                    <h1>Galería de Retratos</h1>
+                    <p>
+                    Explora algunos de nuestros trabajos realizados en diferentes técnicas y estilos.
+                    </p>
+                </div>
 
-    </section>
+        <!-- Imagen principal -->
+                <div class="containerImages">
+                    <div class="visor">
+                        <img id="principal" src="../assets/images/retratos/JovenAcuarela.jpeg" alt="Pintura acuarela de joven" width="1024" height="1280">
+                    </div>
+
+        <!-- Miniaturas -->
+                    <div class="miniaturas">
+                        <img src="../assets/images/retratos/JovenAcuarela.jpeg" class="mini" alt="Pintura acuarela de joven" width="1024" height="1280">
+                        <img src="../assets/images/retratos/jovenOleo.jpeg" class="mini" alt="Pintura oleo de joven" width="1024" height="1280">
+                        <img src="../assets/images/retratos/retratoFamiliaOleo.jpeg" class="mini" alt="pintura oleo de familia" width="1280" height="1024">
+                        <img src="../assets/images/retratos/ninaLapiz.jpeg" class="mini" alt="Retrato al lapiz" width="1024" height="1280">
+                        <img src="../assets/images/retratos/reytratoOleoNovios.jpeg" class="mini" alt="Retrato al oleo de novios" width="1280" height="1024">
+
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+
 
 <!-- FOOTER -->
-<footer>
-    <div class="fondoFooter">
-        <div class="containerFooter">
-            <div class="links">
-                <a href="../views/avisoLegal.html">Aviso legal</a>
-                <a href="../views/contacto.html">Dirección</a>
+        <footer>
+            <div class="fondoFooter">
+                <div class="containerFooter">
+                    <div class="links">
+                        <a href="../views/avisoLegal.html">Aviso legal</a>
+                        <a href="../views/contacto.html">Dirección</a>
+                    </div>
+                    <div class="redes">
+                        <a href="#">
+                            <img src="../assets/icons/facebook.svg" alt="icono facebook">
+                        </a>
+                        <a href="#">   
+                            <img src="../assets/icons/instagram.svg" alt="icono instagram">
+                        </a>
+                        <a href="#">    
+                            <img src="../assets/icons/youtube.svg" alt="icono youtube">
+                        </a>     
+                    </div>
+                </div>
+                    <div class="final">
+                        <p>© 2026 Atelier Retratos</p>
+                    </div>    
             </div>
-            <div class="redes">
-                <a href="#">
-                    <img src="../assets/images/socialIcons/facebook.svg" alt="icono facebook">
-                </a>
-                <a href="#">   
-                    <img src="../assets/images/socialIcons/instagram.svg" alt="icono instagram">
-                </a>
-                <a href="#">    
-                    <img src="../assets/images/socialIcons/youtube.svg" alt="icono youtube">
-                </a>     
-            </div>
-        </div>
-            <div class="final">
-                <p>© 2026 Atelier Retratos</p>
-            </div>    
-    </div>
- </footer>
+        </footer>
 
 
-</body>
+    </body>
+
 </html>
